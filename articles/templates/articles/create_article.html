@@ -5,11 +5,14 @@
     <h1>
       create your article!
     </h1>
-    <form class="site-form" action="{% url 'articles:create' %}" method="post" enctype="multipart/form-data">
+    <form class="site-form" action="{% url 'articles:create' %}" method="post" enctype="multipart/form-data" name='ckeditor'>
       {{form}}
       {% csrf_token %}
       <input type="submit" name="" value="create">
     </form>
   </div>
 <script src="{% static 'slugify.js' %}"></script>
+<script>
+  CKEDITOR.replace('id_body');
+</script>
 {%endblock%}

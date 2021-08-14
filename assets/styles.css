@@ -1,7 +1,7 @@
 body {
   background-color: #0f121f;
   background-image: url(stars.jpg);
-  background-repeat-y:no-repeat;
+  background-repeat:no-repeat;
   background-attachment: fixed;
   color:#fff;
 }
@@ -81,7 +81,7 @@ nav button{
   text-align:center;
 }
 .site-form{
-  margi-top:60px;
+  margin-top:60px;
   border:1px solid #00dba0;
   padding:20px;
 }
